@@ -1,0 +1,110 @@
+schemaVersion: 6
+company:
+  requireBoardApprovalForNewAgents: true
+  feedbackDataSharingEnabled: false
+agents:
+  coordinator:
+    role: "ceo"
+    adapter:
+      type: "codex_local"
+      config:
+        timeoutSec: 180
+        graceSec: 10
+        dangerouslyBypassApprovalsAndSandbox: false
+      runner: "legacy"
+    runtime:
+      heartbeat:
+        enabled: false
+        intervalSec: 0
+        wakeOnAssignment: false
+        wakeOnOnDemand: false
+        wakeOnAutomation: false
+        wakeOnDemand: false
+        maxConcurrentRuns: 1
+    permissions:
+      canCreateAgents: false
+    budgetMonthlyCents: 500
+  engineer:
+    role: "engineer"
+    adapter:
+      type: "codex_local"
+      config:
+        timeoutSec: 180
+        graceSec: 10
+        dangerouslyBypassApprovalsAndSandbox: false
+      runner: "legacy"
+    runtime:
+      heartbeat:
+        enabled: false
+        intervalSec: 0
+        wakeOnAssignment: false
+        wakeOnOnDemand: false
+        wakeOnAutomation: false
+        wakeOnDemand: false
+        maxConcurrentRuns: 1
+    permissions:
+      canCreateAgents: false
+    budgetMonthlyCents: 500
+  reviewer:
+    role: "engineer"
+    adapter:
+      type: "codex_local"
+      config:
+        timeoutSec: 180
+        graceSec: 10
+        dangerouslyBypassApprovalsAndSandbox: false
+      runner: "legacy"
+    runtime:
+      heartbeat:
+        enabled: false
+        intervalSec: 0
+        wakeOnAssignment: false
+        wakeOnOnDemand: false
+        wakeOnAutomation: false
+        wakeOnDemand: false
+        maxConcurrentRuns: 1
+    permissions:
+      canCreateAgents: false
+    budgetMonthlyCents: 500
+  security:
+    role: "engineer"
+    adapter:
+      type: "codex_local"
+      config:
+        timeoutSec: 180
+        graceSec: 10
+        dangerouslyBypassApprovalsAndSandbox: false
+      runner: "legacy"
+    runtime:
+      heartbeat:
+        enabled: false
+        intervalSec: 0
+        wakeOnAssignment: false
+        wakeOnOnDemand: false
+        wakeOnAutomation: false
+        wakeOnDemand: false
+        maxConcurrentRuns: 1
+    permissions:
+      canCreateAgents: false
+    budgetMonthlyCents: 500
+  seo:
+    role: "engineer"
+    adapter:
+      type: "codex_local"
+      config:
+        timeoutSec: 180
+        graceSec: 10
+        dangerouslyBypassApprovalsAndSandbox: false
+      runner: "legacy"
+    runtime:
+      heartbeat:
+        enabled: false
+        intervalSec: 0
+        wakeOnAssignment: false
+        wakeOnOnDemand: false
+        wakeOnAutomation: false
+        wakeOnDemand: false
+        maxConcurrentRuns: 1
+    permissions:
+      canCreateAgents: false
+    budgetMonthlyCents: 500
